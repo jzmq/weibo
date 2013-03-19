@@ -1,0 +1,56 @@
+2    DEBUG [2013-03-18 18:52:52]  GET:https://api.weibo.com/2/account/rate_limit_status.json
+27   DEBUG [2013-03-18 18:52:52]  Authorization: OAuth2 2.00u4vHxBiDyhqB58fc14d72ak3atmB
+28   DEBUG [2013-03-18 18:52:52]  API-RemoteIP: 169.254.32.61
+398  DEBUG [2013-03-18 18:52:52]  Response:
+398  DEBUG [2013-03-18 18:52:52]  https StatusCode:200
+398  DEBUG [2013-03-18 18:52:52]  Server:nginx/1.2.0
+398  DEBUG [2013-03-18 18:52:52]  Date:Mon, 18 Mar 2013 10:53:19 GMT
+399  DEBUG [2013-03-18 18:52:52]  Content-Type:application/json;charset=UTF-8
+399  DEBUG [2013-03-18 18:52:52]  Content-Length:624
+399  DEBUG [2013-03-18 18:52:52]  Connection:keep-alive
+399  DEBUG [2013-03-18 18:52:52]  Api-Server-IP:10.75.5.57
+399  DEBUG [2013-03-18 18:52:52]  Vary:Accept-Encoding
+399  DEBUG [2013-03-18 18:52:52]  X-Varnish:1792370594
+400  DEBUG [2013-03-18 18:52:52]  Age:0
+400  DEBUG [2013-03-18 18:52:52]  Via:1.1 varnish
+406  DEBUG [2013-03-18 18:52:52]  {"api_rate_limits":[{"api":"/statuses/update","limit":30,"limit_time_unit":"HOURS","remaining_hits":30},{"api":"/comments/create","limit":60,"limit_time_unit":"HOURS","remaining_hits":60},{"api":"/direct_messages/new","limit":60,"limit_time_unit":"HOURS","remaining_hits":60},{"api":"/friendships/create","limit":60,"limit_time_unit":"HOURS","remaining_hits":60},{"api":"/friendships/create","limit":100,"limit_time_unit":"DAYS","remaining_hits":100}],"ip_limit":1000,"limit_time_unit":"HOURS","remaining_ip_hits":999,"remaining_user_hits":149,"reset_time":"2013-03-18 19:00:00","reset_time_in_seconds":399,"user_limit":150}
+
+413  INFO  [2013-03-18 18:52:52]  RateLimitStatus [ipLimit=1000, remainingIpHits=999, remainingUserHits=149, resetTime=2013-03-18 19:00:00, resetTimeInSeconds=399, userLimit=150, apiRateLimit=[api_rate_limits [api=/statuses/update, limit=30, limitTimeUnit=HOURS, remainingHits=30], api_rate_limits [api=/comments/create, limit=60, limitTimeUnit=HOURS, remainingHits=60], api_rate_limits [api=/direct_messages/new, limit=60, limitTimeUnit=HOURS, remainingHits=60], api_rate_limits [api=/friendships/create, limit=60, limitTimeUnit=HOURS, remainingHits=60], api_rate_limits [api=/friendships/create, limit=100, limitTimeUnit=DAYS, remainingHits=100]]]
+0    DEBUG [2013-03-18 18:57:41]  Request:
+0    DEBUG [2013-03-18 18:57:41]  GET:https://api.weibo.com/2/account/get_uid.json
+27   DEBUG [2013-03-18 18:57:41]  Authorization: OAuth2 2.00u4vHxBiDyhqB58fc14d72ak3atmB
+27   DEBUG [2013-03-18 18:57:41]  API-RemoteIP: 169.254.32.61
+423  DEBUG [2013-03-18 18:57:42]  Response:
+423  DEBUG [2013-03-18 18:57:42]  https StatusCode:200
+423  DEBUG [2013-03-18 18:57:42]  Server:nginx/1.2.0
+423  DEBUG [2013-03-18 18:57:42]  Date:Mon, 18 Mar 2013 10:58:09 GMT
+423  DEBUG [2013-03-18 18:57:42]  Content-Type:application/json;charset=UTF-8
+423  DEBUG [2013-03-18 18:57:42]  Content-Length:18
+424  DEBUG [2013-03-18 18:57:42]  Connection:keep-alive
+424  DEBUG [2013-03-18 18:57:42]  Api-Server-IP:10.75.5.64
+424  DEBUG [2013-03-18 18:57:42]  Vary:Accept-Encoding
+424  DEBUG [2013-03-18 18:57:42]  X-Varnish:3376040184
+424  DEBUG [2013-03-18 18:57:42]  Age:0
+424  DEBUG [2013-03-18 18:57:42]  Via:1.1 varnish
+431  DEBUG [2013-03-18 18:57:42]  {"uid":1789825542}
+
+436  INFO  [2013-03-18 18:57:42]  {"uid":1789825542}
+0    INFO  [2013-03-18 19:04:10]  code: 19e4d931e929b8ba5c1e516dc40b3522
+3    DEBUG [2013-03-18 19:04:10]  Request:
+4    DEBUG [2013-03-18 19:04:10]  POSThttps://api.weibo.com/oauth2/access_token
+629  DEBUG [2013-03-18 19:04:10]  Response:
+630  DEBUG [2013-03-18 19:04:10]  https StatusCode:200
+630  DEBUG [2013-03-18 19:04:10]  Server:nginx/1.2.0
+630  DEBUG [2013-03-18 19:04:10]  Date:Mon, 18 Mar 2013 11:04:38 GMT
+630  DEBUG [2013-03-18 19:04:10]  Content-Type:text/plain;charset=UTF-8
+630  DEBUG [2013-03-18 19:04:10]  Content-Length:139
+630  DEBUG [2013-03-18 19:04:10]  Connection:keep-alive
+630  DEBUG [2013-03-18 19:04:10]  Pragma:No-cache
+631  DEBUG [2013-03-18 19:04:10]  Cache-Control:no-cache
+631  DEBUG [2013-03-18 19:04:10]  Expires:Thu, 01 Jan 1970 00:00:00 GMT
+631  DEBUG [2013-03-18 19:04:10]  Api-Server-IP:10.75.25.114
+631  DEBUG [2013-03-18 19:04:10]  X-Varnish:3377939109
+631  DEBUG [2013-03-18 19:04:10]  Age:0
+631  DEBUG [2013-03-18 19:04:10]  Via:1.1 varnish
+635  DEBUG [2013-03-18 19:04:10]  {"access_token":"2.00u4vHxBiDyhqB58fc14d72ak3atmB","remind_in":"157679999","expires_in":157679999,"uid":"1789825542","scope":"wo_19880609"}
+

@@ -13,11 +13,18 @@ public class OAuth4Code {
 		Oauth oauth = new Oauth();
 		BareBonesBrowserLaunch.openURL(oauth.authorize("code",args[0],args[1]));
 		System.out.println(oauth.authorize("code",args[0],args[1]));
+		
+		
+		//通过返回值获取code值
+		
+		
+		
 		System.out.print("Hit enter when it's done.[Enter]:");
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String code = br.readLine();
 		Log.logInfo("code: " + code);
 		try{
+			//根据获取的code获取用户的token
 			System.out.println(oauth.getAccessTokenByCode(code));
 		} catch (WeiboException e) {
 			if(401 == e.getStatusCode()){

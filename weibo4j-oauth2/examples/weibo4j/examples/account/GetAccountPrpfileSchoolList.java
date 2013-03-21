@@ -10,8 +10,8 @@ import weibo4j.model.WeiboException;
 public class GetAccountPrpfileSchoolList {
 
 	public static void main(String[] args) {
-//		String access_token = args[0];// 输入授权后的AccessToken
-		String access_token = "2.00u4vHxBiDyhqB58fc14d72ak3atmB";
+		String access_token = args[0];// 输入授权后的AccessToken
+//		String access_token = "";
 		Account am = new Account();
 		am.client.setToken(access_token);
 		try {

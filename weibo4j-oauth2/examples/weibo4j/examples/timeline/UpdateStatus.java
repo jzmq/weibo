@@ -17,6 +17,7 @@ public class UpdateStatus {
 			Log.logInfo(status.toString());
 		} catch (WeiboException e) {
 			e.printStackTrace();
-		}	}
+		}
+	}
 
 }
